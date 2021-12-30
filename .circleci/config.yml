@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Add VoiceOver AppleScript DB Entry
-          command: echo -n "a" > /private/var/db/Accessibility/.VoiceOverAppleScriptEnabled
+          command: sudo bash -c 'echo -n "a" > /private/var/db/Accessibility/.VoiceOverAppleScriptEnabled'
       - run:
           name: Set System Preferences Default
           command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript 1

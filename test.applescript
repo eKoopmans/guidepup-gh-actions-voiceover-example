@@ -9,25 +9,24 @@ end logVoiceOverLastPhrase
 delay 1
 
 with timeout of 1800 seconds
-  -- Start VoiceOver
+  -- Launch VoiceOver
   do shell script "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter"
   
   -- Reduce chance of "Application isn't running" error
   delay 4
 
-  -- Launch Safari
-  tell application "Safari" to activate
-  delay 1
-
-  -- Focus VoiceOver
-  tell application "VoiceOver" to activate
-  delay 1
-
   tell application "System Events"
+    -- Launch Safari
+    tell application "Safari" to activate
+    
     -- Wait for Safari to actually exist
     repeat until (exists window 1 of application process "Safari")
       delay 1
     end repeat
+
+    -- Focus VoiceOver
+    tell application "VoiceOver" to activate
+    delay 1
 
     -- Interact with element
     key code 125 using {control down, option down, shift down}

@@ -1,11 +1,16 @@
 version: 2.1
 
+orbs:
+  macos: circleci/macos@2.0.1
+
 jobs:
   voiceover-test:
     macos:
       xcode: 12.5.1
     steps:
       - checkout
+      - macos/add-uitest-permissions
+      - macos/add-safari-permissions
       - run:
           name: Add VoiceOver AppleScript DB Entry
           command: sudo bash -c 'echo -n "a" > /private/var/db/Accessibility/.VoiceOverAppleScriptEnabled'

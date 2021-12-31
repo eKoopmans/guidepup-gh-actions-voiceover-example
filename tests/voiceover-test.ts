@@ -9,7 +9,15 @@ const test = base.extend<{ vo: VoiceOver; macOSActivate }>({
 
     try {
       await vo.start();
-      await macOSActivate(PLAYWRIGHT_APPLICATION);
+
+      try {
+        await macOSActivate(PLAYWRIGHT_APPLICATION);
+      } catch (e) {
+        console.log("playwright activate failed");
+
+        throw e;
+      }
+
       await use(vo);
     } finally {
       vo.stopLog();

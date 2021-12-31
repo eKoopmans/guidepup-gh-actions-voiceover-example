@@ -19,7 +19,9 @@ jobs:
           command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript 1
       - run:
           name: VoiceOver Test
-          command: osascript ./test.applescript
+          command: osascript ./test.applescript || true
+      - store_artifacts:
+        path: ./screenshots
 
 workflows:
   version: 2

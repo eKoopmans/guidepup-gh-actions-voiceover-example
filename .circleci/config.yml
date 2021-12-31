@@ -22,7 +22,7 @@ jobs:
           command: defaults write com.apple.VoiceOverTraining doNotShowSplashScreen -bool true
       - run:
           name: VoiceOver Test
-          command: osascript ./test.applescript || true
+          command: osascript ./test.applescript
       - store_artifacts:
           path: ./screenshots
 

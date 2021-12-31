@@ -2,6 +2,7 @@ delay 1
 
 do shell script "mkdir -p ./screenshots/"
 do shell script "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter"
+do shell script "open -a Safari"
 
 delay 5
 

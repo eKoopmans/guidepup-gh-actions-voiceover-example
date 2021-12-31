@@ -441,10 +441,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@guidepup/guidepup@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.5.1.tgz#a36e26e17b8f9912ef6948ba42977a1c804b57a9"
-  integrity sha512-Ia1RCcE5a8HLRuhCRcal+5bqlFe1xnlIpdvUOPzZPxt+7aRnmon4VIBqHqaHJwPjX+IB6wfbXd2zL7f8fsDQjg==
+"@guidepup/guidepup@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.5.2.tgz#d0cea85da2bf2d05b728be699cead0bc0386d4de"
+  integrity sha512-kaagg30ysF8ELNtxMAws4VLQJ39PzXpVoL2HDkxqliSTnreM4KpzmCkBqk+4S6y8DDKUejj9cEU77NPq53YvuQ==
   dependencies:
     "@jxa/global-type" "^1.3.4"
     "@jxa/run" "^1.3.4"

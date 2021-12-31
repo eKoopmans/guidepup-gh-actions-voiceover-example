@@ -18,11 +18,8 @@ jobs:
           name: Set System Preferences Default
           command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript 1
       - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - run:
           name: VoiceOver Test
-          command: yarn test
+          command: osascript ./test.applescript
 
 workflows:
   version: 2

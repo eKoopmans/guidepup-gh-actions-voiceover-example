@@ -19,11 +19,11 @@ jobs:
           name: Set AppleScript Enabled Default
           command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript -bool true
       - run:
-          name: Set Disable Splash Screen Default
-          command: defaults write com.apple.VoiceOverTraining doNotShowSplashScreen -bool true
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
       - run:
           name: VoiceOver Test
-          command: osascript ./test.applescript
+          command: yarn test
 
 workflows:
   version: 2

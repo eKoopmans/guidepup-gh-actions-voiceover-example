@@ -7,7 +7,7 @@ jobs:
   voiceover-test:
     macos:
       xcode: 12.5.1
-    resource_class: medium+
+    resource_class: medium
     steps:
       - checkout
       - macos/add-uitest-permissions

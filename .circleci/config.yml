@@ -15,8 +15,11 @@ jobs:
           name: Add VoiceOver AppleScript DB Entry
           command: sudo bash -c 'echo -n "a" > /private/var/db/Accessibility/.VoiceOverAppleScriptEnabled'
       - run:
-          name: Set System Preferences Default
-          command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript 1
+          name: Set AppleScript Enabled Default
+          command: defaults write com.apple.VoiceOver4/default SCREnableAppleScript -bool true
+      - run:
+          name: Set Disable Splash Screen Default
+          command: defaults write com.apple.VoiceOverTraining doNotShowSplashScreen -bool true
       - run:
           name: VoiceOver Test
           command: osascript ./test.applescript || true

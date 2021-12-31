@@ -8,7 +8,13 @@ const test = base.extend<{ vo: VoiceOver; macOSActivate }>({
     const vo = new VoiceOver();
 
     try {
-      await vo.start();
+      try {
+        await vo.start();
+      } catch (e) {
+        console.log("voiceover activate failed");
+
+        throw e;
+      }
 
       try {
         await macOSActivate(PLAYWRIGHT_APPLICATION);

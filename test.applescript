@@ -3,7 +3,9 @@ delay 1
 do shell script "mkdir -p ./screenshots/"
 do shell script "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter"
 
-delay 1
+delay 5
+
+do shell script "screencapture ./screenshots/starting.png"
 
 tell application "System Events"
   tell application "Safari" to activate
@@ -16,13 +18,15 @@ tell application "System Events"
     delay 0.1
   end repeat
 
+  do shell script "screencapture ./screenshots/safari_activated.png"
+
   repeat until (name of every process contains ("VoiceOver"))
     delay 0.1
   end repeat
 
   tell application "VoiceOver" to activate
 
-  delay 5
+  delay 1
 
   do shell script "screencapture ./screenshots/voiceover_activated.png"
 

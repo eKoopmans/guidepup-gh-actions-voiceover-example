@@ -7,58 +7,47 @@ on logVoiceOverLastPhrase()
   end tell
 end logVoiceOverLastPhrase
 
--- Setup screenshots
-do shell script "mkdir -p ./screenshots/"
-
 with timeout of 1800 seconds
   -- Start VoiceOver
   do shell script "/System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter"
-  delay 4
-  do shell script "screencapture ./screenshots/starting.png"
+  delay 2
 
   tell application "System Events"
     -- Launch Safari
     tell application "Safari" to activate
 
     repeat until (exists window 1 of application process "Safari")
-      delay 1
-    end repeat
-
-    do shell script "screencapture ./screenshots/safari_activated.png"
-
-    repeat until (name of every process contains ("VoiceOver"))
-      delay 1
+      delay 0.2
     end repeat
 
     -- Focus VoiceOver
     tell application "VoiceOver" to activate
-    do shell script "screencapture ./screenshots/voiceover_activated.png"
     my logVoiceOverLastPhrase()
 
     -- Interact with element
     key code 125 using {control down, option down, shift down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
 
     -- Move right 5 times
     key code 124 using {control down, option down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
 
     key code 124 using {control down, option down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
 
     key code 124 using {control down, option down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
 
     key code 124 using {control down, option down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
 
     key code 124 using {control down, option down}
-    delay 1
+    delay 0.2
     my logVoiceOverLastPhrase()
     
     -- Navigate to GitHub
@@ -66,7 +55,6 @@ with timeout of 1800 seconds
     keystroke "https://github.com/guidepup/guidepup"
     key code 36
     delay 2
-    do shell script "screencapture ./screenshots/voiceover_navigated.png"
     my logVoiceOverLastPhrase()
 
     tell application "VoiceOver" to quit

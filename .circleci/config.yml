@@ -21,7 +21,7 @@ jobs:
           name: VoiceOver Test
           command: osascript ./test.applescript || true
       - store_artifacts:
-        path: ./screenshots
+          path: ./screenshots
 
 workflows:
   version: 2

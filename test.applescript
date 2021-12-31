@@ -39,41 +39,41 @@ tell application "System Events"
 
   do shell script "screencapture ./screenshots/voiceover_activated.png"
 
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   -- Interact with element
   key code 125 using {control down, option down, shift down}
   delay 1
 
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   -- Move right 5 times
   key code 124 using {control down, option down}
   delay 1
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   key code 124 using {control down, option down}
   delay 1
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   key code 124 using {control down, option down}
   delay 1
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   key code 124 using {control down, option down}
   delay 1
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   key code 124 using {control down, option down}
   delay 1
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
   
   -- Navigate to GitHub
   tell application "Safari" to activate
   keystroke "https://github.com/guidepup/guidepup"
   key code 36
   delay 2
-  logVoiceOverLastPhrase()
+  my logVoiceOverLastPhrase()
 
   do shell script "screencapture ./screenshots/voiceover_navigated.png"
 

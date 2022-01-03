@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
   projects: [
     {
       name: "webkit",
-      use: { ...devices["Desktop Safari"], headless: false },
+      use: { ...devices["Desktop Safari"], headless: false, video: "on" },
     },
   ],
 };

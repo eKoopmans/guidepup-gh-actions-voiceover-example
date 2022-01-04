@@ -5,6 +5,7 @@ An example demonstrating using Guidepup for testing VoiceOver automation with [P
 Run this example's test with:
 
 ```bash
+yarn install --frozen-lockfile
 yarn test
 ```
 

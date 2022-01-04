@@ -1,7 +1,7 @@
 {
   "name": "circleci-voiceover-poc",
   "version": "0.1.0",
-  "description": "PoC of testing voiceover on CircleCI",
+  "description": "Example of testing VoiceOver with Guidepup + Playwright on CircleCI",
   "author": "Craig Morten <craig.morten@hotmail.co.uk>",
   "license": "MIT",
   "private": true,
@@ -10,7 +10,7 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@guidepup/guidepup": "^0.6.0",
+    "@guidepup/guidepup": "^0.7.0",
     "@playwright/test": "^1.17.1",
     "@types/node": "^17.0.0",
     "ts-node": "^10.4.0",

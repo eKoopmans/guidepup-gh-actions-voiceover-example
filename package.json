@@ -10,7 +10,7 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@guidepup/guidepup": "^0.7.0",
+    "@guidepup/guidepup": "^0.7.2",
     "@playwright/test": "^1.17.1",
     "@types/node": "^17.0.0",
     "ts-node": "^10.4.0",

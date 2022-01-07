@@ -1,4 +1,5 @@
 /* eslint-disable no-empty-pattern */
+import { exec } from "child_process";
 import { test as base } from "@playwright/test";
 import { VoiceOver, macOSActivate } from "@guidepup/guidepup";
 
@@ -13,6 +14,13 @@ const test = base.extend<{ vo: VoiceOver }>({
       await macOSActivate(PLAYWRIGHT_APPLICATION);
       await use(vo);
     } finally {
+      await new Promise<void>((resolve) => {
+        exec(
+          "mkdir -p ./test-results && screencapture ./test-results/failure.png",
+          () => resolve()
+        );
+      });
+
       vo.stopLog();
       await vo.stop();
     }

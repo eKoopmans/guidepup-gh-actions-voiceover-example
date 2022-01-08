@@ -15,6 +15,8 @@ jobs:
       - run:
           name: Enable VoiceOver Automation
           command: |
+            macos_major_version=$(sw_vers -productVersion | awk -F. '{ print $1 }')
+
             if [[ $macos_major_version -le 10 ]]; then
               echo "MacOS image not supported! The version is low on this image"
               echo "Please choose an image with MacOS major version >= 11. Documentation: https://circleci.com/docs/2.0/testing-macos"

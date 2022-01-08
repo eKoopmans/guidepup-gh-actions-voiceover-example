@@ -97,6 +97,13 @@ jobs:
                 "'kTCCServiceScreenCapture','/usr/sbin/sshd',1,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
                 "'kTCCServiceScreenCapture','/bin/bash',1,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
                 "'kTCCServiceScreenCapture','com.apple.Terminal',0,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
+
+                # Permit VoiceOver Access To Location
+                "'kTCCServiceLiverpool','com.apple.VoiceOverUtility',0,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
+                "'kTCCServiceLiverpool','com.apple.VoiceOver',0,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
+
+                # Permit VoiceOver Access To Bluetooth
+                "'kTCCServiceBluetoothAlways','com.apple.VoiceOver',0,2,3,1,NULL,NULL,NULL,'UNUSED',NULL,0,$epochdate"
               )
 
               for values in "${permissionValues[@]}"; do

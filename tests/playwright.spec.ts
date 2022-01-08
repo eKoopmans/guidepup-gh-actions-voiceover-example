@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-import test from "./voiceover-test";
+import { voTest as test } from "@guidepup/playwright";
 import searchJourneyItemTextSnapshot from "./searchJourneyItemTextSnapshot.json";
 
 test.describe("Playwright VoiceOver", () => {

@@ -18,3 +18,7 @@ yarn test
 3. Moves through the website using VoiceOver controlled by Guidepup to the search input
 4. Searches for Safari
 5. Moves to the Webkit section of the docs
+
+## How it works
+
+This module makes use of [`@guidepup/playwright`](https://github.com/guidepup/guidepup-playwright) for seemless Guidepup integration with Playwright.

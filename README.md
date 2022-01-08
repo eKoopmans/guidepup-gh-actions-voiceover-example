@@ -21,4 +21,4 @@ yarn test
 
 ## How it works
 
-This module makes use of [`@guidepup/playwright`](https://github.com/guidepup/guidepup-playwright) for seemless Guidepup integration with Playwright.
+This module makes use of [`@guidepup/playwright`](https://github.com/guidepup/guidepup-playwright) for seamless Guidepup integration with Playwright.

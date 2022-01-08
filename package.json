@@ -1,5 +1,5 @@
 {
-  "name": "circleci-voiceover-poc",
+  "name": "circleci-voiceover-example",
   "version": "0.1.0",
   "description": "Example of testing VoiceOver with Guidepup + Playwright on CircleCI",
   "author": "Craig Morten <craig.morten@hotmail.co.uk>",

@@ -1,4 +1,4 @@
-# circleci-voiceover-poc
+# circleci-voiceover-example
 
 An example demonstrating using Guidepup for testing VoiceOver automation with [Playwright](https://playwright.dev/) in CircleCI.
 

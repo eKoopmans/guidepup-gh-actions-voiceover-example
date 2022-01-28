@@ -15,8 +15,6 @@ npx @guidepup/setup
 yarn test
 ```
 
-> Note: please ensure you have setup the [VoiceOver prerequisites](https://github.com/guidepup/guidepup/blob/main/guides/voiceover-prerequisites/README.md) before running this example.
-
 ## Test flow
 
 1. The test launches Safari using Playwright

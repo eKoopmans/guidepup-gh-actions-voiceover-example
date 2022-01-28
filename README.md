@@ -5,7 +5,13 @@ An example demonstrating using Guidepup for testing VoiceOver automation with [P
 Run this example's test with:
 
 ```bash
+# Install Dependencies
 yarn install --frozen-lockfile
+
+# Enable VoiceOver Automation
+npx @guidepup/setup
+
+# Run VoiceOver Test
 yarn test
 ```
 
@@ -22,3 +28,5 @@ yarn test
 ## How it works
 
 This module makes use of [`@guidepup/playwright`](https://github.com/guidepup/guidepup-playwright) for seamless Guidepup integration with Playwright.
+
+Environment setup for screen-reader automation handled by [`@guidepup/setup`](https://github.com/guidepup/setup).

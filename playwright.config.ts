@@ -4,7 +4,7 @@ import { voConfig } from "@guidepup/playwright";
 const config: PlaywrightTestConfig = {
   ...voConfig,
   reportSlowTests: null,
-  timeout: 10 * 60 * 1000,
+  timeout: 2 * 60 * 1000,
   projects: [{ use: devices["Desktop Safari"] }],
 };
 

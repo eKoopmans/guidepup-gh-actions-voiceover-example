@@ -441,17 +441,17 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@guidepup/guidepup@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.10.1.tgz#18470bdb6a85478f1366c462e0ba279470e61b53"
-  integrity sha512-BKfIs+9NSa20/4Ev3vqucWRDUNNXOJ2RuZy4/n3pHkQPQrVe5CWq7XPAXOMu8MUG/I8kMc2gDZIVsRQArTvdTQ==
+"@guidepup/guidepup@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@guidepup/guidepup/-/guidepup-0.13.0.tgz#7995ec599283d02a9532c9f79aca2ca3aa2e3c47"
+  integrity sha512-U56KXtxkyZa9m7q9l4et3AtkU+0Z+cYEnF4vA5ZgUbJCfQr66F2Rn04HPhIDDEZ/2PMYP5NsdDONSWu23ESQ4w==
 
-"@guidepup/playwright@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@guidepup/playwright/-/playwright-0.3.0.tgz#11278e5f0998d21476c8ab0e63b314418b3397dc"
-  integrity sha512-9BF+fwXsOudtAPuUTxqa6Wq7kMjcQX/ZNpaghtUO8GHpffdkJUBpZfQGSvqDD0eKlGraf1zWf8JV1y9iCcn3DQ==
+"@guidepup/playwright@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@guidepup/playwright/-/playwright-0.6.1.tgz#1eccf6caa688e096ea542e404398b2975f3e5989"
+  integrity sha512-3nItcGdIPjO11j6KuvPbs5gsZqkp/LUFEYK/BRUcIUalxpZMw7KWPe9pNa40J9nKyi41T9qepxsq5Qx2Dbm1ZA==
   dependencies:
-    "@guidepup/guidepup" "^0.10.1"
+    "@guidepup/guidepup" "^0.13.0"
 
 "@jest/types@^27.2.5", "@jest/types@^27.4.2":
   version "27.4.2"

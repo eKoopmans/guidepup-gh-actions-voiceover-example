@@ -17,6 +17,6 @@ jobs:
       - name: Enable VoiceOver Automation
         uses: guidepup/setup-action@0.1.3
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: VoiceOver Test
         run: npm test
